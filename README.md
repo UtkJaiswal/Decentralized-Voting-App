@@ -1,48 +1,10 @@
-
-# Election - DAPP Tutorial
-Build your first decentralized application, or Dapp, on the Ethereum Network with this tutorial!
-
-Full Free Video Tutorial:**
-https://youtu.be/3681ZYbDSSk
-
-## 2019 Updated Code
-https://github.com/dappuniversity/election/tree/2019_update
-
-Follow the steps below to download, install, and run this project.
-
-## Dependencies
-Install these prerequisites to follow along with the tutorial. See free video tutorial or a full explanation of each prerequisite.
-- NPM: https://nodejs.org
-- Truffle: https://github.com/trufflesuite/truffle
-- Ganache: http://truffleframework.com/ganache/
-- Metamask: https://metamask.io/
-
-
-## Step 1. Clone the project
-`git clone https://github.com/dappuniversity/election`
-
-## Step 2. Install dependencies
-```
-$ cd election
-$ npm install
-```
-## Step 3. Start Ganache
-Open the Ganache GUI client that you downloaded and installed. This will start your local blockchain instance. See free video tutorial for full explanation.
-
-
-## Step 4. Compile & Deploy Election Smart Contract
-`$ truffle migrate --reset`
-You must migrate the election smart contract each time your restart ganache.
-
-## Step 5. Configure Metamask
-See free video tutorial for full explanation of these steps:
-- Unlock Metamask
-- Connect metamask to your local Etherum blockchain provided by Ganache.
-- Import an account provided by ganache.
-
-## Step 6. Run the Front End Application
-`$ npm run dev`
-Visit this URL in your browser: http://localhost:3000
-
-If you get stuck, please reference the free video tutorial.
-
+# Election-DApp
+This app is a voting app using ethereum blockchain technology. The steps to deploy the app on local network are:
+1. Open VS code and jump to the working directory
+2. Open Genache
+3. Make sure blockchain code is working properly by typing "truffle migrate --reset"
+4. Open chrome and sign in to metamask in chrome extension 
+5. In Accounts symbol(coloured circle on top right)->Import Account and paste the private key from Genache account
+6. In networks of metamask head to Custom RPC and fill Network name and type URL as "HTTP://127.0.0.1:7545" and chain Id as "1337" and connect to same network as genache
+7. Now connect the account in metamask
+8. In VS code type "npm start" (for this command make sure to change the directory to "client")
